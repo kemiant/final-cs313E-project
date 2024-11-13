@@ -78,6 +78,6 @@ Good luck, Player 136. The future of Player 48 rests in your hands."""
       open_form(response['last_started_form'])
     elif response['status'] == 'registered':
         # This is a new team, start with the first challenge
-        open_form('P1_Red_Light')
+        open_form('P4_Tug_War')
     else:
-      open_form('P1_Red_Light')
+      open_form('P4_Tug_War')
