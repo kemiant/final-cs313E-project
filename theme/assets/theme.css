@@ -749,7 +749,7 @@ input[disabled] ~ span {
   bottom: 0;  
   z-index: 1000;
   width: 90%; 
-  left: 13%
+  left: 11%;
 
 
 .anvil-role-image-container {
@@ -784,3 +784,5 @@ input[disabled] ~ span {
 
 
 
+.anvil-role-fixed-bag-image {
+  position: fixed;  /* Fixes the image to the viewport */
