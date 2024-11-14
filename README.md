@@ -1,6 +1,6 @@
 # CS313E Term Project
 
-Anvil is a platform for building full-stack web apps with nothing but Python.  The app in this repository is built with [Anvil](https://anvil.works?utm_source=github:app_README), the framework for building web apps with nothing but Python. You can clone this app into your own Anvil account to use and modify.
+For my project I used Anvil. Anvil is a platform for building full-stack web apps with nothing but Python.  The app in this repository is built with [Anvil](https://anvil.works?utm_source=github:app_README), the framework for building web apps with nothing but Python. You can clone this app into your own Anvil account to use and modify.
 
 ### Cloning the app to run on your computer OR opening the published app to view code and reading over code in GitHub.
 
