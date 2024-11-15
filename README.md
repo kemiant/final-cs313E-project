@@ -19,3 +19,6 @@ Find the **Run** button at the top-right of the Anvil editor:
 ## Viewing the Python code on GitHub
 Click on this [anvil website](https://whispered-overjoyed-menu.anvil.app) to view the functioning website for testing. If you want to view python code in GitHub, click on the client_code and server_code folder and for those with another folder inside it, click on the \_\_init\_\_.py files to view the python code, otherwise click on the files for the python codes. 
 <img width="1097" alt="Screen Shot 2024-11-14 at 1 10 40 AM" src="https://github.com/user-attachments/assets/79e2c634-bd1e-47cd-bd5e-4d4402c0c516">
+Review the proposal for more insights on the methods and python code used in this project.
+
+Thank you!
