@@ -127,6 +127,9 @@ Will you gather the 10 marbles in time, or will the participant’s journey end 
       Notification(f"Correct!").show()
       self.animated.visible =True
       self.still.visible =False
+      time.sleep(2.5)
+      self.animated.visible =False
+      self.still.visible =True
       self.update_item_index(question_index, -1)
     elif question_index == -1:
       Notification(f"You have already answered this question.").show()
