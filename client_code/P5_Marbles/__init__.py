@@ -188,9 +188,7 @@ Will you gather the 10 marbles in time, or will the participant’s journey end 
       
       self.time_elapsed.text = f"{minutes} min {seconds} sec"
     self.stay_alive += 1  
-    if self.stay_alive >= 300:
-      self.stay_alive = 0
-      anvil.server.call_s('stay_alive')
+
 
   def instruction_file_click(self, **event_args):
     """This method is called when the button is clicked"""

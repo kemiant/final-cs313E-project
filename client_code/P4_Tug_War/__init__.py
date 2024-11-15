@@ -84,9 +84,6 @@ The game is rigged against them, but the right combination of 6 players could be
       
       self.time_elapsed.text = f"{minutes} min {seconds} sec"
     self.stay_alive += 1  
-    if self.stay_alive >= 300:
-      self.stay_alive = 0
-      anvil.server.call_s('stay_alive')
 
   
   def submit_click(self, **event_args):
