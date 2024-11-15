@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 #    Module1.say_hello()
 #
 
-current_time = 0
+current_time = datetime
 
 def get_time():
   return current_time

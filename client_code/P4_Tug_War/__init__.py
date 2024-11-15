@@ -10,6 +10,7 @@ import anvil.js
 import time
 from .. import HashingFunction
 from .. import Timer
+from datetime import datetime, timedelta, timezone
 
 class P4_Tug_War(P4_Tug_WarTemplate):
   def __init__(self, **properties):
@@ -70,7 +71,8 @@ The game is rigged against them, but the right combination of 6 players could be
       self.card_2.visible =True
       self.card_3.visible =True
       self.card_4.visible =True
-      Timer.start_time('p4')
+      #Timer.start_time('p4')
+      Timer.set_time(datetime.now(timezone.utc))
       # anvil.server.call_s('start_timer', 'p4_start')
       self.begin_time = True
       self.time_elapsed.visible = True

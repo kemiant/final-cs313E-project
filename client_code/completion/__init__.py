@@ -5,23 +5,24 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
-from anvil import Timer
+#from anvil import Timer
 from .. import Timer
-
+from datetime import datetime, timedelta, timezone
 
 class completion(completionTemplate):
   def __init__(self, **properties):
 
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.elapsed = Timer.end_time()
-    Timer.commit_times()
+    #self.elapsed = Timer.end_time()
+    #Timer.commit_times()
+    time_elapsed = (datetime.now(timezone.utc) - Timer.current_time)
     # self.elapsed = anvil.server.call_s('stop_timer')
-    self.elapsed1 = str(int(self.elapsed//60)) + ' min ' + str(int(self.elapsed % 60)) + ' sec'
+    #self.elapsed1 = str(int(self.elapsed//60)) + ' min ' + str(int(self.elapsed % 60)) + ' sec'
     self.text_to_display1 = f"""Congratulations, Player 136!
 You’ve done it! Through cunning, strategy, and sheer determination, you have successfully guided Player 48 to victory in the Squid Game.
 
-Your remarkable skills have not only brought Player 48 to safety but also triumphed over the countless dangers along the way. You completed this ultimate challenge in {self.elapsed1}.
+Your remarkable skills have not only brought Player 48 to safety but also triumphed over the countless dangers along the way. You completed this ultimate challenge in {time_elapsed}!
 
 Now, sit back and revel in the glory. BAXA is tallying the final results as we speak. Soon, we’ll know who the true masterminds of the Escape McCombs: Squid Game Edition are.
 

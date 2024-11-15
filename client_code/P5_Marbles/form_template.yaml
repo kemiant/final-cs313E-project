@@ -44,6 +44,10 @@ components:
     properties: {background: '', border: '', col_spacing: medium, col_widths: '{"AGUPQG":45}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
     type: ColumnPanel
   - components:
+    - layout_properties: {col_xs: 2, row: VRRULB, width_xs: 10}
+      name: image_2
+      properties: {display_mode: zoom_to_fill, height: 283.26953125, source: _/theme/Visuals/Banners/Marbles_Building.png}
+      type: Image
     - layout_properties: {col_xs: 0, row: DGIGKD, width_xs: 12}
       name: still
       properties: {display_mode: zoom_to_fill, role: fixed-bag-image, source: _/theme/Visuals/Banners/Marble_Bag.png}
