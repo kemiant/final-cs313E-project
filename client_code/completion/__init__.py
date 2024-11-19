@@ -30,6 +30,10 @@ Thank you for your incredible dedication and for seeing this through to the end.
 
 """
     # Counter for the position of next character to display
+    team = Timer.get_table()
+    if team is None:
+      team = app_tables.teams.get(team_name="team")
+    team['end'] = datetime.now()
     self.current_position = 0
     # Start the typing effect
     anvil.js.call_js('startTypingEffect', self.type_text)

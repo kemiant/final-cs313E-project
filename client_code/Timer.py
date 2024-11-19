@@ -57,6 +57,14 @@ def commit_times():
   team['end'] = team_times_end
   team['total_time'] = time_elapsed
 
+def get_table():
+  global team_name
+  team = app_tables.teams.get(team_name=team_name)
+  return team
+  #team['end'] = team_times_end
+
+
+
   
 
   

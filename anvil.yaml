@@ -42,6 +42,9 @@ db_schema:
     - admin_ui: {order: 8, width: 200}
       name: end
       type: datetime
+    - admin_ui: {order: 9, width: 200}
+      name: start
+      type: datetime
     server: full
     title: teams
   users:
@@ -89,5 +92,5 @@ services:
 - client_config: {allow_remember_me: true, allow_signup: false, confirm_email: true, enable_automatically: true, remember_me_days: 0.3333, use_email: true}
   server_config: {user_table: users}
   source: /runtime/services/anvil/users.yml
-startup: {module: P5_Marbles, type: form}
+startup: {module: Welcome, type: form}
 startup_form: null
