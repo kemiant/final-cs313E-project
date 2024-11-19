@@ -71,18 +71,15 @@ Good luck, Player 136. The future of Player 48 rests in your hands."""
     Timer.set_team_name(team_name)
     
     #anvil.server.call_s('register_team', team_name)
-    team = Timer.get_table()
-    if team is None:
-      team = app_tables.teams.get(team_name="Player 146")
-    team['start'] = datetime.now()
+
     response = anvil.server.call('register_or_resume_team', team_name)
-    open_form('P4_Tug_War')
+
     # Check the response status
-    #if response['status'] == 'resumed' and response['last_started_form']:
+    if response['status'] == 'resumed' and response['last_started_form']:
         # The team is resuming, open the last started form
-      #open_form(response['last_started_form'])
-    #elif response['status'] == 'registered':
+      open_form(response['last_started_form'])
+    elif response['status'] == 'registered':
         # This is a new team, start with the first challenge
-        #open_form('P4_Tug_War')
-    #else:
-      #open_form('P4_Tug_War')
+        open_form('P4_Tug_War')
+    else:
+      open_form('P4_Tug_War')
